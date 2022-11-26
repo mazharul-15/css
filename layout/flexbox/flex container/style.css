@@ -5,6 +5,7 @@
     flex-wrap: wrap / nowrap/ wrap-reverse;
     justify-content: flex-start / center / flex-end / space-around / space-between;
     align-items: flex-start / center / flex-end / stretch / baseline;
+    align-content: flex-start / center / flex-end / stretch / space-around / space-between;
 
 */
 
