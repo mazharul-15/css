@@ -1,3 +1,13 @@
+/*
+    display: grid / inline-grid;
+    grid-template-columns: auto auto auto .....;
+    gap: Xpx;
+    row-gap: Ypx;
+    column-gap: Xpx;
+
+*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +19,9 @@
     /* display: inline-grid; */
     display: grid;
     grid-template-columns: auto auto auto;
+    /* gap: 10px; */
+    /* row-gap: 20px; */
+    column-gap: 20px;
     background: darkcyan;
     padding: 30px;
 }
@@ -20,5 +33,5 @@
     padding: 20px;
     text-align: center;
     border: 2px solid #000;
-    margin: 2px;
+    /* margin: 2px; */
 }
