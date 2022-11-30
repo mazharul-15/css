@@ -1,0 +1,61 @@
+/*
+    :root -> a element of a html document is html
+    :target -> a 
+*/
+
+:root {
+    --red: rgb(82, 31, 31);
+    --white: rgb(255, 249, 249);
+    --blue: rgb(47, 47, 71);
+    --width: 100vh;
+}
+
+body {
+    /* background: var(--red);
+    color: var(--white); */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.bookmarks {
+    margin: 50px;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 20px;
+    background: darkcyan;
+    padding: 30px;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.description {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section, .right-section {
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+p {
+    line-height: 20px;
+    word-spacing: 5px;
+    size: 18px;
+}
+
+:target {
+    background: rgb(12, 51, 51);
+    color: var(--white);
+}
+

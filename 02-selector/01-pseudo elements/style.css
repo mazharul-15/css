@@ -24,3 +24,7 @@ p::before {
     font-size: 30px;
     color: #fff;
 }
+
+::first-line {
+    background: darkmagenta;
+}
