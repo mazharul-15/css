@@ -1,0 +1,46 @@
+/*
+    child selector
+
+    :first-child
+    :first-of-type
+    :last-child
+    :last-of-type
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .one > h2:first-child {
+    background: darkcyan;
+} */
+
+
+.one > h2:first-child {
+    /* background: darkkhaki; */
+}
+
+.one > :last-child {
+    background: salmon;
+}
+
+.one * {
+    /* font-size: 50px;
+    color: gray; */
+}
+
+.one > h2:first-of-type {
+    border: 5px dashed red;
+}
+
+.one > p:first-of-type {
+    border: 5px dashed green;
+}
+
+.one > p:last-of-type {
+    border: 5px dashed blue;
+}
