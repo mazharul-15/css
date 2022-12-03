@@ -1,0 +1,81 @@
+/*
+    // (an + b)   where n starts at n = 0
+    :nth-child(n)   // n = 0
+    :nth-child(2n)  // n = 0
+    :nth-child(2n + 1) // n = 0
+    :nth-child(3n)  // n = 0
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.parent-1 {
+    background: darkgray;
+    padding: 50px;
+}
+
+.parent-1 * {
+    margin-bottom: 10px;
+}
+
+.parent-1 > p {
+
+}
+
+.parent-1 > p ~ p {
+
+}
+
+.parent-1 > p + h1 {
+
+}
+
+.parent-1 :nth-child(3) {
+    /* color: red; */
+}
+
+.parent-1 > :nth-child(2n+1) {
+    /* color: darkcyan; */
+}
+
+.parent-1 > :nth-child(even) {
+    /* color: blue; */
+}
+
+.parent-1 > p :nth-of-type(3) {
+
+}
+
+.parent-1 > :nth-child(2n+5) {
+    color: darkorange;
+}
+
+
+/* List CSS Area */
+.list {
+    margin: 30px;
+    padding: 50px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 7px rgb(66 65 66 / 50%);
+}
+
+.list > ul > li {
+    margin-bottom: 10px;
+    list-style: none;
+    /* font-size: 20px; */
+}
+
+ul > :nth-child(3n + 2) {
+    color: red;
+    font-size: 30px;
+}
+
+ul > :nth-child(n) {
+    background: cadetblue;
+}
