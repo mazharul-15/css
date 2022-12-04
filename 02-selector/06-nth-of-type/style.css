@@ -1,0 +1,55 @@
+/*
+    :nth-of-type()
+
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.child-selector {
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    background: rgb(136, 138, 139);
+}
+
+.child-selector * {
+    margin-bottom: 10px;
+}
+
+.child-selector > :first-child {
+    color: yellowgreen;
+}
+
+.child-selector > h2:first-of-type {
+    color: red
+}
+
+.child-selector > :nth-child(4) {
+    color: blue;
+}
+
+.child-selector > :nth-child(n + 6):nth-child(4n):nth-child(-n + 14) {
+    color: lime;
+}
+
+
+.child-selector > p:nth-of-type(12) {
+    color: rgb(11, 236, 11);
+    font-size: 20px;
+}
+
+.child-selector > :nth-last-child(1) {
+    color: rgb(153, 19, 86);
+    font-size: 25px;
+}
+
+.child-selector > h2:nth-last-of-type(3) {
+    color: rgb(13, 243, 243);
+    font-size: 35px;
+    border: 2px solid #000;
+}
