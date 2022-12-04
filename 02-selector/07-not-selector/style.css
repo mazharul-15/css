@@ -1,0 +1,30 @@
+/*
+    :not() selector
+    class-name> :nth-child(n):not(4)
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.not-selector {
+    width: 70%;
+    margin: 50px auto;
+    padding: 30px;
+    background: gray;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 2px rgb(24 23 22 / 50%);
+    text-align: center;
+}
+
+.not-selector > :nth-child(n):not(:nth-child(4)) {
+    color: rgb(38, 231, 231);
+    font-size: 30px;
+    padding: 20px;
+    border: 2px solid #000;
+    margin-top: 10px;
+}
